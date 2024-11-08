@@ -1,0 +1,128 @@
+
+
+.aboutUs {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px;
+    background-color: #111;
+    /* background-image: url('/images/brown.webp');  */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/* Image container */
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.image {
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(255, 127, 80, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+   
+
+}
+
+/* Content section */
+.content {
+    flex: 1.5;
+    color: #333;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: white; /* Light Coral color for the main text */
+    background-image: linear-gradient(to left, #ff6f61, #ffffff ,#bbb); /* Gradient from light coral to white */
+    -webkit-background-clip: text; /* Clip the background gradient to the text */
+    background-clip: text; /* Ensures the gradient applies to the text */
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 10px;
+    text-transform: uppercase; /* Capitalizes the text for a bolder look */
+}
+
+p {
+    font-size: 1.2rem;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Features list styling */
+.featuresList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Each list item */
+.featuresList li {
+    display: flex;
+    align-items: center;
+    font-size: 1.15rem;
+    color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.1);  /* Subtle background for each item */
+    padding: 10px;
+    border-radius: 5px;  /* Slight round corners */
+    transition: background-color 0.3s ease;  /* Smooth background transition */
+}
+
+.featuresList li:hover {
+    background-color: #c08a5a;  /* Hover effect */
+}
+
+/* Icon styling */
+.icon {
+    color: #ff6f61;
+    margin-right: 10px;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .aboutUs {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .content {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .featuresList {
+        align-items: center;
+    }
+}

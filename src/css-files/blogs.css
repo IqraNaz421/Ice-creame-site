@@ -1,0 +1,118 @@
+
+
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.our-blogs-section {
+    padding: 1rem;
+    background-color: #111;
+    color: #ffffff;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3rem;
+}
+
+.first-word {
+    color: white;
+    margin-right: 10px;
+}
+
+.second-word {
+    color: #ffffff;
+}
+
+.blogs-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    background-color: #111;
+    overflow: hidden;
+    width: 400px;
+    text-align: left;
+   
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add smooth hover effect */
+}
+
+.blog-card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 8px 15px rgba(211, 165, 122, 0.5); /* Add subtle shadow on hover */
+}
+
+.blog-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+   
+}
+
+.blog-title {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin: 0.5rem 1rem;
+}
+
+.blog-author {
+    font-size: 1.2rem;
+    color: lightcoral;
+    margin: 0.5rem 1rem;
+}
+
+.blog-description {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin: 0.5rem 1rem;
+}
+
+.blog-button {
+    background-color: lightcoral;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.5rem 1rem;
+    transition: background-color 0.3s ease; /* Smooth button hover effect */
+}
+
+.blog-button:hover {
+    background-color: #c08a5a; /* Darker coral on hover */
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .blog-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .blog-title {
+        font-size: 1.1rem;
+    }
+
+    .blog-author,
+    .blog-description {
+        font-size: 1rem;
+    }
+
+    .blog-button {
+        padding: 0.4rem 1.5rem;
+    }
+}

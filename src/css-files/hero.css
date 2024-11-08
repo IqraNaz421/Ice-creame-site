@@ -1,0 +1,220 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    text-align: left;
+    z-index: 2;
+    padding: 1.25px;
+    
+    /* position: absolute;
+    top: 150px;
+    left: 150px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    text-align: left;
+    z-index: 2;
+    padding: 1.25px;
+    animation: fadeIn 1.5s ease forwards;
+    opacity: 0; */
+}
+
+.hero-content h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    color: antiquewhite;
+}
+
+.cta-button {
+
+    background-color: lightcoral;
+    color: #ffffff;
+    margin-top: 15px;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background-color:  #c08a5a;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .hero {
+        height: 400px;
+    }
+
+    .hero-content {
+        top: 45%;
+        left: 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+    }
+} 
+ 
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Overlay for better readability */
+    /* z-index: 1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    text-align: left;
+    z-index: 2;
+    padding: 1.25px;
+    animation: fadeIn 1.5s ease forwards;
+    opacity: 0;
+}
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 400px;
+    }
+
+    .hero-content {
+        top: 45%;
+        left: 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+    }
+}  */
